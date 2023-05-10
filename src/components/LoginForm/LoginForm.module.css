@@ -1,28 +1,21 @@
-.contactForm {
+.loginForm {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    padding-top: 30px;  
+    align-items: flex-start;
 }
 
 .label {
     font-weight: 500;
+    padding: 20px 0 5px 0;
     font-size: 1.1rem;
-    padding-bottom: 10px;
-}
-
-.label:not(:first-child) {
-    padding-top: 10px;
 }
 
 .input {
-    width: 230px;
     font-size: 1rem;
     border-radius: 5px;
     padding: 8px 8px;
@@ -35,7 +28,7 @@
     background-color: lightblue;
 }
 
-.addContact {
+.btnLogIn {
     width: 150px;
     font-weight: 600;
     font-size: 1rem;
@@ -45,7 +38,6 @@
     border: 2px solid gray;
     box-shadow: 5px 5px 5px -2px gray;
 }
-
-.addContact:hover {
+.btnLogIn:hover {
     background-color: royalblue;
 }

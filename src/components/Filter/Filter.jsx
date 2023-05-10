@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { useDispatch } from "react-redux";
-import { filterContact } from "redux/filterSlice";
+import { filterContact } from "redux/phonebook/filterSlice";
 import css from "./Filter.module.css";
 
 export const Filter = () => {
@@ -23,8 +23,8 @@ export const Filter = () => {
                     className={css.filterInput}
                     type="search"
                     name={filterInputId}
-                    onChange={handleChangeFilter}
-                ></input>
+                    onChange={handleChangeFilter}>
+                </input>
         </div>
     )
 }

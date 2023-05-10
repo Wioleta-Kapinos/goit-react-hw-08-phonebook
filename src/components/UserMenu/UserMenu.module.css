@@ -1,0 +1,22 @@
+.userName {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(13, 132, 244);
+    margin: 0;
+    padding: 0 15px 0 0;
+}
+
+.btnLogOut {
+    width: 80px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    box-shadow: 5px 5px 5px -2px gray;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}

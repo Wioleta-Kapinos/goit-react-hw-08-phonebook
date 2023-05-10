@@ -6,15 +6,17 @@
     padding-bottom: 20px;
     height: 50px;
 }
+
 .itemName {
     font-weight: 500;
     font-size: 0.9rem;
 }
+
 .itemPhone {
     font-weight: 500;
-    padding-left: 10px;
     font-size: 0.9rem;
 }
+
 .btnDelete {
     width: 100px;
     height: 30px;
@@ -25,6 +27,7 @@
     border: 2px solid gray;
     box-shadow: 5px 5px 5px -2px gray; 
 }
+
 .btnDelete:hover {
     background-color: royalblue;
 }
