@@ -1,9 +1,12 @@
 import { useDispatch } from "react-redux";
 import { logIn } from "redux/auth/operations";
+import { nanoid } from "nanoid";
 import css from "./LoginForm.module.css";
 
 export const LoginForm = () => {
     const dispatch = useDispatch();
+    const emailInputId = nanoid();
+    const passwordInputId = nanoid();
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -20,18 +23,24 @@ export const LoginForm = () => {
     return (
         <div className={css.loginForm}>
             <form className={css.form} onSubmit={handleSubmit}>
-               <label className={css.label}>
+               <label
+                htmlFor={emailInputId} 
+                className={css.label}>
                     Email
                 </label>
                     <input
+                    id={emailInputId}
                     className={css.input} 
                     type="email" 
                     name="email" 
                     required />
-                <label className={css.label}>
+                <label
+                    htmlFor={passwordInputId}
+                    className={css.label}>
                     Password
                 </label>
-                    <input 
+                    <input
+                    id={passwordInputId} 
                     className={css.input}
                     type="password" 
                     name="password" 

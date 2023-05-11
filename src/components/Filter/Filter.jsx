@@ -22,7 +22,7 @@ export const Filter = () => {
                 <input
                     className={css.filterInput}
                     type="search"
-                    name={filterInputId}
+                    id={filterInputId}
                     onChange={handleChangeFilter}>
                 </input>
         </div>

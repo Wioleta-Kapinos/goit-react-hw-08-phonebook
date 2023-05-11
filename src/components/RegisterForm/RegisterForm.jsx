@@ -1,9 +1,13 @@
 import { useDispatch } from "react-redux";
 import { register } from "redux/auth/operations";
+import { nanoid } from "nanoid";
 import css from "./RegisterForm.module.css";
 
 export function RegisterForm() {
     const dispatch = useDispatch();
+    const userNameInputId = nanoid();
+    const emailInputId = nanoid();
+    const passwordInputId = nanoid();
   
     const handleSubmit = e => {
       e.preventDefault();
@@ -21,26 +25,35 @@ export function RegisterForm() {
     return (
         <div className={css.registerForm}>
             <form className={css.form} onSubmit={handleSubmit}>
-                <label className={css.label}>
+                <label
+                    htmlFor={userNameInputId}
+                    className={css.label}>
                     Username
                 </label>
-                    <input 
+                    <input
+                        id={userNameInputId} 
                         className={css.input}
                         type="text"
                         name="name"
                         required />
-                <label className={css.label}>
+                <label 
+                    htmlFor={emailInputId}
+                    className={css.label}>
                     Email
                 </label>
                     <input
+                        id={emailInputId}
                         className={css.input} 
                         type="email"
                         name="email"
                         required />
-                <label className={css.label}>
+                <label
+                    htmlFor={passwordInputId} 
+                    className={css.label}>
                     Password
                 </label>
                     <input
+                        id={passwordInputId}
                         className={css.input}
                         type="password"
                         name="password"
