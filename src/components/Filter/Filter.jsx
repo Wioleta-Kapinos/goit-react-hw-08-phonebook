@@ -20,9 +20,9 @@ export const Filter = () => {
             Find contacts by name
             </label>
                 <input
+                    id={filterInputId}
                     className={css.filterInput}
                     type="search"
-                    id={filterInputId}
                     onChange={handleChangeFilter}>
                 </input>
         </div>
